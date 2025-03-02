@@ -1,0 +1,39 @@
+import AddToCartButton from "./AddToCartButton";
+import ItemCounter from "./ItemCounter";
+
+const Rightcard = () => {
+  return (
+    <div className="flex flex-col gap-2 min-h-[550px] bg-white md:p-8 p-2">
+      <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
+        sneaker company
+      </p>
+      <h1 className="text-3xl font-bold text-gray-800">
+        Fall Limited Edition Sneakers
+      </h1>
+
+      <p className="py-3 text-justify text-sm text-gray-400">
+        These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they’ll withstand everything the
+        weather can offer.
+      </p>
+
+      <div className="flex flex-col gap-6 pb-12">
+        <div className="flex items-center justify-between gap-4">
+          <span className="text-3xl font-bold text-gray-700">$125.00</span>
+          <span className="text-s flex h-[27px] w-[50px] items-center justify-center rounded-md bg-gray-900 font-bold text-white">
+            50%
+          </span>
+          <span className="text-s flex-auto text-right font-semibold text-gray-500 line-through">
+            $250.00
+          </span>
+        </div>
+
+        <div className="grid w-full grid-cols-1 justify-center gap-3">
+          <ItemCounter />
+          <AddToCartButton />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Rightcard;
