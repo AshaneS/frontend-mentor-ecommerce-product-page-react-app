@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
@@ -98,3 +99,7 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 ---
 
 Built with ❤️ using React Router.
+=======
+# frontend-mentor-ecommerce-product-page-react-app
+This is a Frontend Mentor project showcasing an Ecommerce Product Page, built using React Router and Tailwind CSS.
+>>>>>>> 76cf2492adadcd40cf2bafa29e82bd08e94b1e0e
