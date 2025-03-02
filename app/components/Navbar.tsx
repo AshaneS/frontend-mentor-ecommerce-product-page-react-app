@@ -4,9 +4,17 @@ import cartIcon from "../assets/icon-cart.svg";
 import avatar from "../assets/image-avatar.png";
 import { navigation } from "../data/navigationLinks";
 import hamburgermenu from "../assets/icon-menu.svg";
+import { useState } from "react";
+import { Basket } from "./Basket";
 const Navbar = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
+
   return (
-    <div className="font-primary flex items-center justify-between px-8 py-5 md:border-b-1 md: border-gray-300">
+    <div className="font-primary md: flex items-center justify-between border-gray-300 px-8 py-5 md:border-b-1">
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center justify-between gap-4">
           <div>
@@ -25,12 +33,26 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center justify-between gap-6">
-        <img src={cartIcon} alt="cart" className="h-5 w-5 md:h-5 md:w-5" />
+        <img
+          src={cartIcon}
+          alt="cart"
+          className="h-5 w-5 md:h-5 md:w-5"
+          onClick={toggleCart}
+        />
         <img
           src={avatar}
           alt="avatar"
-          className="h-8 w-8 md:h-12 md:w-12 rounded-full hover:border-2 hover:border-orange-400"
+          className="h-8 w-8 rounded-full hover:border-2 hover:border-orange-400 md:h-12 md:w-12"
         />
+
+        {/* Conditional rendering the cart basket */}
+
+        {isCartOpen && (
+          <div className="absolute top-14 right-0 rounded-md bg-white p-4 shadow-lg">
+            {/* Cart content goes here */}
+            <Basket />
+          </div>
+        )}
       </div>
     </div>
   );
