@@ -48,7 +48,7 @@ const Navbar = () => {
         {/* Conditional rendering the cart basket */}
 
         {isCartOpen && (
-          <div className="absolute top-14 right-0 rounded-md bg-white p-4 shadow-lg">
+          <div className="md:absolute md:top-20 md:right-60 rounded-md bg-white shadow-lg">
             {/* Cart content goes here */}
             <Basket />
           </div>
