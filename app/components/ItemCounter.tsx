@@ -12,11 +12,11 @@ const ItemCounter = () => {
   };
 
   return (
-    <div className="flex justify-between items-center  bg-gray-200 rounded-lg p-2 px-6 h-14">
+    <div className="flex justify-between items-center  bg-gray-200 rounded-lg p-2 px-6 h-18">
       <button onClick={decrement}>
       <img src={minus} alt="" />
       </button>
-      <p className="font-bold">{count}</p>
+      <p className="font-bold text-xl">{count}</p>
       <button onClick={increment}>
         <img src={plus} alt="" />
       </button>

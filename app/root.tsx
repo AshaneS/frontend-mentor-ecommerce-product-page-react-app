@@ -48,7 +48,7 @@ export default function App() {
     <div className="flex flex-col min-h-screen max-w-7xl mx-auto">
       <Navbar />
       {/* <main className="flex flex-1 items-center justify-center"> */}
-      <main className="flex flex-1 items-center justify-center h-full w-full mx-auto">
+      <main className="flex flex-1 items-center justify-center h-full w-full mx-auto px-4">
         {/* <div className="bg-green-400 h-2 w-9 "></div> */}
         <Outlet />
       </main>

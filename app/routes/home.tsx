@@ -21,11 +21,11 @@ export default function Home() {
 
     // </div>
 
-    <div className="flex h-full max-w-[375px] flex-col items-center justify-center md:max-w-5xl md:flex-row mb-2 md:justify-between md:items-center ">
-      <div className="w-full  md:p-6">
+    <div className="flex h-full max-w-[488px] flex-col md:max-w-5xl md:flex-row md:justify-between md:items-center ">
+      <div className="w-full  md:p-6 ">
         <Leftcard />
       </div>
-      <div className="w-full  md:p-6 ">
+      <div className="w-full  md:p-6 pt-3">
         <Rightcard />
       </div>
     </div>
